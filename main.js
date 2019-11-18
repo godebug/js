@@ -12,20 +12,18 @@ class App extends React.Component {
     }
 
     render = () =>
-        <div id={'l'}>
-            {
-                data.map((a, b) =>
-                    <div className={'row'} key={'r_' + b}>{
-                        a.d.map((a, c) =>
-                            <p className={'d'} key={'a_' + b + 'b_' + c}>{a}</p>).concat(
-                            a.m.filter((i, c) => (c >= this.state.oX) && (c <= this.state.cX))
-                                .map((a, c) =>
-                                    <p className={'m'} key={'m_' + b + 'b_' + c}>{a}</p>)
-                        )
-                    }</div>
-                )
-            }
-        </div>
+        <div id={'l'}>{
+            data.map((a, b) =>
+                <div className={'row'} key={'r_' + b}>{
+                    a.d.map((a, c) =>
+                        <p className={'d'} key={'a_' + b + 'b_' + c}>{a}</p>).concat(
+                        a.m.filter((i, c) => (c >= this.state.oX) && (c <= this.state.cX))
+                            .map((a, c) =>
+                                <p className={'m'} key={'m_' + b + 'b_' + c}>{a}</p>)
+                    )
+                }</div>
+            )
+        }</div>
 }
 
 render(<App/>, document.getElementById("root"));
