@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+div.row {
+    margin: 5px 0px;
+    padding: 5px;
+}
+
+div.row span{
+    font: 15px/30px 'Poiret One', cursive;
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0px 5px;
+}
+
+div.row span.m{
+    background: #eee7cf;
+}
+
+div.row span.d{
+    background: #d9e0ee;
+}

@@ -1,6 +1,6 @@
 const fs = require('fs'), path = require('path'),
     inPath = path.join(__dirname, 'in.csv'),
-    outPath = path.join(__dirname, 'out.json');
+    outPath = path.join(__dirname, 'in.js');
 
 const count = (a,b) => {
     let k=0;
@@ -24,5 +24,5 @@ for (let i=0;i<l;i++) {
     calc.push(row);
 }
 let f= fs.createWriteStream(outPath);
-f.write(JSON.stringify(calc));
+f.write('export const data ='+JSON.stringify(calc));
 
