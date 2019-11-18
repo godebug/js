@@ -1,26 +1,30 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Space+Mono);
 
 .row {
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-columns: repeat(37, 1fr);
     grid-template-rows: 2fr;
     margin: 2px 0px;
 }
 
 p{
-    font: 10px/20px 'Poiret One', cursive;
+    font: 14px/20px 'Space Mono', monospace;
     display: block;
     text-align: center;
-    color: #fff;
+    color: #000000;
     margin: 0;
     padding: 0;
+    transition-property: background-color;
+    transition-duration: 500ms;
+    transition-delay: 0s;
+    background-color: transparent;
 }
 
-.d{
-    background: #326dc7;
-}
-
-.m{
-    background: #d9e0ee;
-    color: black;
+p:hover {
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 500ms;
+    transition-delay: 0s;
+    background-color: #31aeff;
 }
