@@ -1,23 +1,25 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 
-div.row {
-    margin: 5px 0px;
-    padding: 5px;
+.row {
+    display: grid;
+    grid-template-columns: 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr;
+    margin: 2px 0px;
 }
 
-div.row span{
-    font: 15px/30px 'Poiret One', cursive;
-    display: inline-block;
-    width: 30px;
+p{
+    font: 10px/20px 'Poiret One', cursive;
+    display: block;
     text-align: center;
-    border-radius: 50%;
-    margin: 0px 5px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
-div.row span.m{
-    background: #eee7cf;
+.d{
+    background: #326dc7;
 }
 
-div.row span.d{
+.m{
     background: #d9e0ee;
+    color: black;
 }
