@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "main.js",
   "repository": "git@github.com:godebug/js.git",
-  "author": "",
+  "author": "godebug",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.7.2",
