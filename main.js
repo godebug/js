@@ -10,7 +10,6 @@ class App extends React.Component {
             oX: 0,
         }
     }
-
     render = () =>
         <div id={'l'}>{
             data.map((a, b) =>

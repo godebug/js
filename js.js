@@ -23,6 +23,13 @@ for (let i=0;i<l;i++) {
     }
     calc.push(row);
 }
+
+let stat = new Map();
+for (let i=0;i<l;i++) {
+    calc[i].m.forEach( c => stat.set(c, stat.has(c) ? stat.get(c) + 1: 1))
+}
+
+console.log(stat);
 let f= fs.createWriteStream(outPath);
 f.write('export const data ='+JSON.stringify(calc));
 
